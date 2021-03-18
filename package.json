@@ -1,6 +1,6 @@
 {
   "name": "nodebb-theme-fusionauth",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The FusionAuth forum theme",
   "repository": "https://github.com/FusionAuth/nodebb-theme-fusionauth",
   "main": "theme.less",
