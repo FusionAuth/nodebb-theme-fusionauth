@@ -22,5 +22,7 @@
 	</div>
 
 	<!-- IMPORT partials/footer/js.tpl -->
+
+	<!-- dan comment -->
 </body>
 </html>
