@@ -11,8 +11,10 @@
         <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="2ad8271e-3164-4e6f-9b58-3711b5051068" data-blockingmode="auto" type="text/javascript"></script>
 
 	<script>
+		var RELATIVE_PATH = "{relative_path}";
 		var config = JSON.parse('{{configJSON}}');
 		var app = {
+			template: "{template.name}",
 			user: JSON.parse('{{userJSON}}')
 		};
 	</script>
@@ -41,4 +43,3 @@
 		</nav>
 		<div class="container" id="content">
 		<!-- IMPORT partials/noscript/warning.tpl -->
-		<!-- IMPORT partials/noscript/message.tpl -->
