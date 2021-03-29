@@ -6,10 +6,6 @@
 	<link rel="stylesheet" type="text/css" href="{relative_path}/assets/client<!-- IF bootswatchSkin -->-{bootswatchSkin}<!-- END -->.css?{config.cache-buster}" />
 	{{{each linkTags}}}{function.buildLinkTag}{{{end}}}
 
-
-        <!-- cookiebot cookie warnings -->
-        <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="2ad8271e-3164-4e6f-9b58-3711b5051068" data-blockingmode="auto" type="text/javascript"></script>
-
 	<script>
 		var RELATIVE_PATH = "{relative_path}";
 		var config = JSON.parse('{{configJSON}}');
