@@ -1,0 +1,46 @@
+@import "../../nodebb-theme-persona/scss/overrides";
+
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$blue-1: #5EB4EE;
+$blue-4: #3998DB;
+$blue-7: #156AA3;
+$gray-1: #f7f7f7;
+$gray-2: #e5e5e5;
+$gray-3: #bfbfbf;
+$gray-4: #999999;
+$gray-5: #737373;
+$gray-6: #4c4c4c;
+$gray-7: #262626;
+$black: #000;
+
+$green-gray3: rgba(31, 158, 129, 0.51);
+$green-1: #28E2BD;
+$green-4: #0BB796;
+$green-7: #0F8B72;
+
+$orange-1: #FFC287;
+$orange-4: #FF9C3D;
+$orange-7: #FF6A00;
+
+$purple-1: #577494;
+$purple-4: #34485E;
+$purple-7: #213246;
+
+$red-1: #FF6A7D;
+$red-4: #EE3E54;
+$red-7: #C81B3D;
+
+$yellow-1: #F4F286;
+$yellow-4: #F0DB4F;
+$yellow-7: #E7C901;
+
+$body: #E7EDF2;
+$body-font-color: $gray-7;
