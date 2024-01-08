@@ -12,6 +12,7 @@
 		"../nodebb-theme-persona/public/modules/autohidingnavbar.js",
 		"../nodebb-theme-persona/public/persona.js"
 	],
+	"templates": "templates",
 	"modules": {
 		"../admin/plugins/persona.js": "../nodebb-theme-persona/public/admin.js",
 		"persona/taskbar.js": "../nodebb-theme-persona/public/modules/taskbar.js",

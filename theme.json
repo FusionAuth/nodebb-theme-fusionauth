@@ -2,5 +2,6 @@
     "id": "nodebb-theme-fusionauth",
     "name": "FusionAuth Theme",
     "description": "The FusionAuth forum theme",
-    "url": "https://github.com/FusionAuth/nodebb-theme-fusionauth"
+    "url": "https://github.com/FusionAuth/nodebb-theme-fusionauth",
+    "baseTheme": "nodebb-theme-persona"
 }
