@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="{function.localeToHTML, userLang, defaultLang}" <!-- IF languageDirection -->data-dir="{languageDirection}" style="direction: {languageDirection};" <!-- ENDIF languageDirection --> >
+<html lang="{function.localeToHTML, userLang, defaultLang}" {{{if languageDirection}}}data-dir="{languageDirection}" style="direction: {languageDirection};"{{{end}}}>
 <head>
-<!-- End Google Tag Manager -->
-
 	<title>{browserTitle}</title>
 	{{{each metaTags}}}{function.buildMetaTag}{{{end}}}
-	<link rel="stylesheet" type="text/css" href="{relative_path}/assets/client<!-- IF bootswatchSkin -->-{bootswatchSkin}<!-- END -->.css?{config.cache-buster}" />
+	<link rel="stylesheet" type="text/css" href="{relative_path}/assets/client{{{if bootswatchSkin}}}-{bootswatchSkin}{{{end}}}{{{ if (languageDirection=="rtl") }}}-rtl{{{ end }}}.css?{config.cache-buster}" />
 	{{{each linkTags}}}{function.buildLinkTag}{{{end}}}
 
 	<script>
@@ -15,18 +13,19 @@
 			template: "{template.name}",
 			user: JSON.parse('{{userJSON}}')
 		};
+
+		document.documentElement.style.setProperty('--panel-offset', `${localStorage.getItem('panelOffset') || 0}px`);
 	</script>
 
-	<!-- IF useCustomHTML -->
+	{{{if useCustomHTML}}}
 	{{customHTML}}
-	<!-- END -->
-	<!-- IF useCustomCSS -->
+	{{{end}}}
+	{{{if useCustomCSS}}}
 	<style>{{customCSS}}</style>
-	<!-- END -->
-
+	{{{end}}}
 </head>
 
-<body class="{bodyClass} skin-<!-- IF bootswatchSkin -->{bootswatchSkin}<!-- ELSE -->noskin<!-- END -->">
+<body class="{bodyClass} skin-{{{if bootswatchSkin}}}{bootswatchSkin}{{{else}}}noskin{{{end}}}">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P7VLHG"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -40,10 +39,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	</nav>
 
 	<main id="panel" class="slideout-panel">
-		<nav class="navbar navbar-default navbar-fixed-top header" id="header-menu" component="navbar">
-			<div class="container">
+		<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark header border-bottom" id="header-menu" component="navbar">
+			<div class="container justify-content-between flex-nowrap">
 				<!-- IMPORT partials/menu.tpl -->
 			</div>
 		</nav>
-		<div class="container" id="content">
+		<script>
+			const rect = document.getElementById('header-menu').getBoundingClientRect();
+			const offset = Math.max(0, rect.bottom);
+			document.documentElement.style.setProperty('--panel-offset', offset + `px`);
+		</script>
+		<div class="container pt-3" id="content">
 		<!-- IMPORT partials/noscript/warning.tpl -->
+		<!-- IMPORT partials/noscript/message.tpl -->

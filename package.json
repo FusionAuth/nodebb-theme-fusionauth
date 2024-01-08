@@ -1,9 +1,19 @@
 {
   "name": "nodebb-theme-fusionauth",
-  "version": "1.0.12",
+  "version": "2.0.0",
+  "nbbpm": {
+    "compatibility": "^3.5.0"
+  },
   "description": "The FusionAuth forum theme",
-  "repository": "https://github.com/FusionAuth/nodebb-theme-fusionauth",
-  "main": "theme.less",
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FusionAuth/nodebb-theme-fusionauth"
+  },
+  "main": "library.js",
+  "keywords": [
+    "nodebb",
+    "theme",
+    "forum"
+  ],
   "license": "MIT"
 }
