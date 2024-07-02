@@ -11,7 +11,7 @@ Here's theming docs: https://docs.nodebb.org/development/themes/
 If you want to change the theme:
 
 * make changes to the repo, including bumping the version
-* push changes to master
+* push changes to main
 * publish the theme to npm
 * submit a support ticket with nodebb telling them the theme version we want to upgrade to
 * wait a few days

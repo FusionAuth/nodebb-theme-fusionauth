@@ -1,6 +1,6 @@
 {
   "name": "nodebb-theme-fusionauth",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "nbbpm": {
     "compatibility": "^3.5.0"
   },
