@@ -1,6 +1,5 @@
 {
 	"id": "nodebb-theme-fusionauth",
-	"library": "./lib/theme.js",
 	"hooks": [
 		{ "hook": "filter:widgets.getAreas", "method": "defineWidgetAreas" },
 		{ "hook": "filter:config.get", "method": "getThemeConfig" },

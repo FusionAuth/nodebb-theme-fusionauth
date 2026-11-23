@@ -1,8 +1,8 @@
 {
   "name": "nodebb-theme-fusionauth",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "nbbpm": {
-    "compatibility": "^3.5.0"
+    "compatibility": "^4.16.0"
   },
   "description": "The FusionAuth forum theme",
   "repository": {

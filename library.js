@@ -1,1 +1,1 @@
-module.exports = require('../nodebb-theme-persona/library.js');
+module.exports = require('./lib/theme');
